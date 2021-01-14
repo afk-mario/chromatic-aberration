@@ -1,0 +1,19 @@
+.image-element-wrapper {
+  width: 50vh;
+  height: 50vh;
+  margin: auto;
+  border: 2px solid white;
+}
+
+.image-element-plane {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.image-element-wrapper .media {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

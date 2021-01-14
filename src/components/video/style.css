@@ -1,0 +1,32 @@
+.video-element-wrapper {
+  width: 50vh;
+  height: 50vh;
+  margin: auto;
+  border: 2px solid white;
+  position: relative;
+}
+
+.video-element-plane {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.video-element-wrapper .media {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.video-element-wrapper button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: var(--margin-02) var(--margin-04);
+  background: black;
+  border: 2px solid white;
+  color: white;
+  text-transform: uppercase;
+}

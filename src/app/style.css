@@ -1,0 +1,64 @@
+:root {
+  --fg: white;
+  --bg: black;
+
+  --red: red;
+  --green: green;
+  --blue: blue;
+
+  --margin-01: 8px;
+  --margin-h: calc(var(--margin-01) * 0.5);
+  --margin-q: calc(var(--margin-01) * 0.25);
+  --margin-02: calc(var(--margin-01) * 2);
+  --margin-03: calc(var(--margin-01) * 3);
+  --margin-04: calc(var(--margin-01) * 4);
+  --margin-05: calc(var(--margin-01) * 5);
+  --margin-06: calc(var(--margin-01) * 6);
+  --margin-07: calc(var(--margin-01) * 7);
+  --margin-08: calc(var(--margin-01) * 8);
+  --margin-09: calc(var(--margin-01) * 9);
+  --margin-10: calc(var(--margin-01) * 10);
+}
+
+body,
+html {
+  font-family: "Castoro", serif;
+  background: var(--bg);
+  color: var(--fg);
+  padding: 0;
+  margin: 0;
+  min-height: 200vh;
+}
+
+header {
+  padding: var(--margin-10) var(--margin-02);
+}
+
+h1 {
+  display: block;
+  width: 100%;
+  margin: 0;
+  margin: auto;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 3em;
+  font-style: italic;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr;
+  width: 100%;
+  padding: 0 var(--margin-10);
+  grid-gap: var(--margin-05);
+}
+
+.curtains-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+}
