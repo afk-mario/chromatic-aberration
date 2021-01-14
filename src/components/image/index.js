@@ -6,7 +6,7 @@ import { vertexShader, fragmentShader } from "shaders/chromatic-aberration";
 
 import "./style.css";
 
-function Image({ src, alt, sensibility = 0.1, damp = 0.2 }) {
+function Image({ src, alt, sensibility = 0.2, damp = 0.2 }) {
   const ref = useRef();
   const isIn = useRef(false);
   const mouse = useRef(new Vec2());
