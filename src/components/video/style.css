@@ -1,15 +1,13 @@
 .video-element-wrapper {
-  width: 50vh;
-  height: 50vh;
-  margin: auto;
+  width: 100%;
+  height: 500px;
   /* border: 2px solid white; */
-  position: relative;
 }
 
 .video-element-plane {
   display: block;
   width: 100%;
-  height: 100%;
+  height: 500px;
 }
 
 .video-element-wrapper .media {

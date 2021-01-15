@@ -14,7 +14,7 @@ const App = () => {
       <div className="wrapper">
         <Image src="https://source.unsplash.com/daily" />
         <Image src="/image.jpg" />
-        <Video src="/video.mp4" />
+        <Video src="/video.webm" />
       </div>
     </div>
   );

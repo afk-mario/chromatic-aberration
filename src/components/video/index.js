@@ -6,7 +6,7 @@ import { vertexShader, fragmentShader } from "shaders/chromatic-aberration";
 
 import "./style.css";
 
-function Video({ src, alt, sensibility = 0.1, damp = 0.2 }) {
+function Video({ src, alt, sensibility = 0.2, damp = 0.2 }) {
   const [plane, setPlane] = useState(null);
 
   const ref = useRef();
@@ -84,20 +84,11 @@ function Video({ src, alt, sensibility = 0.1, damp = 0.2 }) {
 
   const onReady = plane => {
     setPlane(plane);
-    console.log("ready");
+    plane.playVideos();
   };
 
   return (
     <div ref={ref} className="video-element-wrapper">
-      {plane ? (
-        <button
-          onClick={() => {
-            plane.playVideos();
-          }}
-        >
-          play
-        </button>
-      ) : null}
       <Plane
         className="image-element-plane"
         vertexShader={vertexShader}

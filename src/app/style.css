@@ -50,8 +50,11 @@ h1 {
   grid-template-columns: repeat(2, 1fr);
   grid-template-columns: 1fr;
   width: 100%;
+  max-width: 800px;
+  margin: auto;
   padding: 0 var(--margin-10);
-  grid-gap: var(--margin-05);
+  padding-bottom: var(--margin-10);
+  grid-gap: var(--margin-10);
 }
 
 .curtains-canvas {
