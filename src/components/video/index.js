@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useRef, useEffect } from "react";
 
 import { Vec2 } from "curtainsjs";
 import { Plane } from "react-curtains";
@@ -7,7 +7,7 @@ import { vertexShader, fragmentShader } from "shaders/chromatic-aberration";
 import "./style.css";
 
 function Video({ src, alt, sensibility = 0.2, damp = 0.2 }) {
-  const [plane, setPlane] = useState(null);
+  // const [plane, setPlane] = useState(null);
 
   const ref = useRef();
   const isIn = useRef(false);
@@ -83,7 +83,6 @@ function Video({ src, alt, sensibility = 0.2, damp = 0.2 }) {
   };
 
   const onReady = plane => {
-    setPlane(plane);
     plane.playVideos();
   };
 
