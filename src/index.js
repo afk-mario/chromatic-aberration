@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { Curtains } from "react-curtains";
+import { HelmetProvider } from "react-helmet-async";
 
 import "./index.css";
 import App from "./app";
@@ -9,7 +10,9 @@ import reportWebVitals from "./reportWebVitals";
 ReactDOM.render(
   <React.StrictMode>
     <Curtains pixelRatio={Math.min(1.5, window.devicePixelRatio)}>
-      <App />
+      <HelmetProvider>
+        <App />
+      </HelmetProvider>
     </Curtains>
   </React.StrictMode>,
   document.getElementById("root")
